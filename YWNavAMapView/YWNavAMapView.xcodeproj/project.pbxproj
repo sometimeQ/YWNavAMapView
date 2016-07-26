@@ -1,0 +1,942 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8EA60DAD52DD85B2051FCFB2 /* libPods-YWNavAMapView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7915D6B1A02371F1719CA9 /* libPods-YWNavAMapView.a */; };
+		A79A1FD71D41B20F001C7292 /* DriveAMPcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A1FD61D41B20F001C7292 /* DriveAMPcontroller.m */; };
+		A79A1FE51D41BE59001C7292 /* DriveNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A1FDB1D41BE59001C7292 /* DriveNaviViewController.m */; };
+		A79A1FE61D41BE59001C7292 /* MoreMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A1FDE1D41BE59001C7292 /* MoreMenuView.m */; };
+		A79A1FE71D41BE59001C7292 /* NaviPointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A1FE11D41BE59001C7292 /* NaviPointAnnotation.m */; };
+		A79A1FE81D41BE59001C7292 /* SpeechSynthesizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A1FE41D41BE59001C7292 /* SpeechSynthesizer.m */; };
+		A79A1FEB1D41C164001C7292 /* WalkAMPController.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A1FEA1D41C164001C7292 /* WalkAMPController.m */; };
+		A79A1FEE1D41C3C9001C7292 /* WalkNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A1FED1D41C3C9001C7292 /* WalkNaviViewController.m */; };
+		A7AFCC031D40D9180070DEF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AFCC021D40D9180070DEF3 /* main.m */; };
+		A7AFCC061D40D9180070DEF3 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = A7AFCC051D40D9180070DEF3 /* AppDelegate.mm */; };
+		A7AFCC091D40D9180070DEF3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AFCC081D40D9180070DEF3 /* ViewController.m */; };
+		A7AFCC0C1D40D9180070DEF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7AFCC0A1D40D9180070DEF3 /* Main.storyboard */; };
+		A7AFCC0E1D40D9180070DEF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7AFCC0D1D40D9180070DEF3 /* Assets.xcassets */; };
+		A7AFCC111D40D9180070DEF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7AFCC0F1D40D9180070DEF3 /* LaunchScreen.storyboard */; };
+		A7AFCC1C1D40D9190070DEF3 /* YWNavAMapViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AFCC1B1D40D9190070DEF3 /* YWNavAMapViewTests.m */; };
+		A7AFCC271D40D9190070DEF3 /* YWNavAMapViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AFCC261D40D9190070DEF3 /* YWNavAMapViewUITests.m */; };
+		A7FA24321D46071A00268889 /* baiduNaviSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A7FA24001D46071A00268889 /* baiduNaviSDK.bundle */; };
+		A7FA24331D46071A00268889 /* libBaiduMobStatForSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7FA24041D46071A00268889 /* libBaiduMobStatForSDK.a */; };
+		A7FA24341D46071A00268889 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FA24071D46071A00268889 /* CDataScanner.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A7FA24351D46071A00268889 /* CFilteringJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FA240A1D46071A00268889 /* CFilteringJSONSerializer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A7FA24361D46071A00268889 /* CJSONDeserializer_BlocksExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FA240C1D46071A00268889 /* CJSONDeserializer_BlocksExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A7FA24371D46071A00268889 /* CJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FA240E1D46071A00268889 /* CJSONSerialization.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A7FA24381D46071A00268889 /* CJSONSerializedData.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FA24101D46071A00268889 /* CJSONSerializedData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A7FA24391D46071A00268889 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FA24131D46071A00268889 /* CDataScanner_Extensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A7FA243A1D46071A00268889 /* NSCharacterSet_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FA24151D46071A00268889 /* NSCharacterSet_Extensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A7FA243B1D46071A00268889 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FA24171D46071A00268889 /* NSDictionary_JSONExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A7FA243C1D46071A00268889 /* NSScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FA24191D46071A00268889 /* NSScanner_Extensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A7FA243D1D46071A00268889 /* CJSONDataSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FA241C1D46071A00268889 /* CJSONDataSerializer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A7FA243E1D46071A00268889 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FA241E1D46071A00268889 /* CJSONDeserializer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A7FA243F1D46071A00268889 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FA24201D46071A00268889 /* CJSONScanner.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A7FA24401D46071A00268889 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FA24221D46071A00268889 /* CJSONSerializer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A7FA24411D46071A00268889 /* CSerializedJSONData.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FA24241D46071A00268889 /* CSerializedJSONData.m */; };
+		A7FA24421D46071A00268889 /* libbaiduNaviSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7FA24301D46071A00268889 /* libbaiduNaviSDK.a */; };
+		A7FA24431D46071A00268889 /* updatelog.txt in Resources */ = {isa = PBXBuildFile; fileRef = A7FA24311D46071A00268889 /* updatelog.txt */; };
+		A7FA24451D46088900268889 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7FA24441D46088900268889 /* AudioToolbox.framework */; };
+		A7FA24471D46089200268889 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7FA24461D46089200268889 /* ImageIO.framework */; };
+		A7FA24491D46089D00268889 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7FA24481D46089D00268889 /* CoreMotion.framework */; };
+		A7FA244B1D4608AB00268889 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7FA244A1D4608AB00268889 /* MediaPlayer.framework */; };
+		A7FA244D1D4608CD00268889 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A7FA244C1D4608CD00268889 /* libstdc++.6.0.9.tbd */; };
+		A7FA244F1D4608D700268889 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7FA244E1D4608D700268889 /* Security.framework */; };
+		A7FA24511D460A2700268889 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7FA24501D460A2700268889 /* CoreLocation.framework */; };
+		A7FA24561D460B7100268889 /* BMKDriveController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FA24551D460B7100268889 /* BMKDriveController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7AFCC181D40D9190070DEF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7AFCBF61D40D9180070DEF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7AFCBFD1D40D9180070DEF3;
+			remoteInfo = YWNavAMapView;
+		};
+		A7AFCC231D40D9190070DEF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7AFCBF61D40D9180070DEF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7AFCBFD1D40D9180070DEF3;
+			remoteInfo = YWNavAMapView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25EEF12D56E18DDB08C44FC8 /* Pods-YWNavAMapView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YWNavAMapView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YWNavAMapView/Pods-YWNavAMapView.debug.xcconfig"; sourceTree = "<group>"; };
+		2648FF26F507DCA25FE169A2 /* Pods-YWNavAMapView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YWNavAMapView.release.xcconfig"; path = "Pods/Target Support Files/Pods-YWNavAMapView/Pods-YWNavAMapView.release.xcconfig"; sourceTree = "<group>"; };
+		A79A1FD51D41B20F001C7292 /* DriveAMPcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriveAMPcontroller.h; sourceTree = "<group>"; };
+		A79A1FD61D41B20F001C7292 /* DriveAMPcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriveAMPcontroller.m; sourceTree = "<group>"; };
+		A79A1FDA1D41BE59001C7292 /* DriveNaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriveNaviViewController.h; sourceTree = "<group>"; };
+		A79A1FDB1D41BE59001C7292 /* DriveNaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriveNaviViewController.m; sourceTree = "<group>"; };
+		A79A1FDD1D41BE59001C7292 /* MoreMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreMenuView.h; sourceTree = "<group>"; };
+		A79A1FDE1D41BE59001C7292 /* MoreMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreMenuView.m; sourceTree = "<group>"; };
+		A79A1FE01D41BE59001C7292 /* NaviPointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NaviPointAnnotation.h; sourceTree = "<group>"; };
+		A79A1FE11D41BE59001C7292 /* NaviPointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaviPointAnnotation.m; sourceTree = "<group>"; };
+		A79A1FE31D41BE59001C7292 /* SpeechSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechSynthesizer.h; sourceTree = "<group>"; };
+		A79A1FE41D41BE59001C7292 /* SpeechSynthesizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechSynthesizer.m; sourceTree = "<group>"; };
+		A79A1FE91D41C164001C7292 /* WalkAMPController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalkAMPController.h; sourceTree = "<group>"; };
+		A79A1FEA1D41C164001C7292 /* WalkAMPController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalkAMPController.m; sourceTree = "<group>"; };
+		A79A1FEC1D41C3C9001C7292 /* WalkNaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalkNaviViewController.h; sourceTree = "<group>"; };
+		A79A1FED1D41C3C9001C7292 /* WalkNaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalkNaviViewController.m; sourceTree = "<group>"; };
+		A7AFCBFE1D40D9180070DEF3 /* YWNavAMapView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YWNavAMapView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7AFCC021D40D9180070DEF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A7AFCC041D40D9180070DEF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A7AFCC051D40D9180070DEF3 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		A7AFCC071D40D9180070DEF3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A7AFCC081D40D9180070DEF3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A7AFCC0B1D40D9180070DEF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7AFCC0D1D40D9180070DEF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7AFCC101D40D9180070DEF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7AFCC121D40D9180070DEF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7AFCC171D40D9190070DEF3 /* YWNavAMapViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YWNavAMapViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7AFCC1B1D40D9190070DEF3 /* YWNavAMapViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YWNavAMapViewTests.m; sourceTree = "<group>"; };
+		A7AFCC1D1D40D9190070DEF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7AFCC221D40D9190070DEF3 /* YWNavAMapViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YWNavAMapViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7AFCC261D40D9190070DEF3 /* YWNavAMapViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YWNavAMapViewUITests.m; sourceTree = "<group>"; };
+		A7AFCC281D40D9190070DEF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7FA24001D46071A00268889 /* baiduNaviSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = baiduNaviSDK.bundle; sourceTree = "<group>"; };
+		A7FA24021D46071A00268889 /* BaiduMobStat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMobStat.h; sourceTree = "<group>"; };
+		A7FA24031D46071A00268889 /* BaiduMobStatForSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMobStatForSDK.h; sourceTree = "<group>"; };
+		A7FA24041D46071A00268889 /* libBaiduMobStatForSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBaiduMobStatForSDK.a; sourceTree = "<group>"; };
+		A7FA24061D46071A00268889 /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner.h; sourceTree = "<group>"; };
+		A7FA24071D46071A00268889 /* CDataScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner.m; sourceTree = "<group>"; };
+		A7FA24091D46071A00268889 /* CFilteringJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFilteringJSONSerializer.h; sourceTree = "<group>"; };
+		A7FA240A1D46071A00268889 /* CFilteringJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFilteringJSONSerializer.m; sourceTree = "<group>"; };
+		A7FA240B1D46071A00268889 /* CJSONDeserializer_BlocksExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer_BlocksExtensions.h; sourceTree = "<group>"; };
+		A7FA240C1D46071A00268889 /* CJSONDeserializer_BlocksExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer_BlocksExtensions.m; sourceTree = "<group>"; };
+		A7FA240D1D46071A00268889 /* CJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerialization.h; sourceTree = "<group>"; };
+		A7FA240E1D46071A00268889 /* CJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerialization.m; sourceTree = "<group>"; };
+		A7FA240F1D46071A00268889 /* CJSONSerializedData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializedData.h; sourceTree = "<group>"; };
+		A7FA24101D46071A00268889 /* CJSONSerializedData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializedData.m; sourceTree = "<group>"; };
+		A7FA24121D46071A00268889 /* CDataScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner_Extensions.h; sourceTree = "<group>"; };
+		A7FA24131D46071A00268889 /* CDataScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner_Extensions.m; sourceTree = "<group>"; };
+		A7FA24141D46071A00268889 /* NSCharacterSet_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCharacterSet_Extensions.h; sourceTree = "<group>"; };
+		A7FA24151D46071A00268889 /* NSCharacterSet_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSCharacterSet_Extensions.m; sourceTree = "<group>"; };
+		A7FA24161D46071A00268889 /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
+		A7FA24171D46071A00268889 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
+		A7FA24181D46071A00268889 /* NSScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSScanner_Extensions.h; sourceTree = "<group>"; };
+		A7FA24191D46071A00268889 /* NSScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSScanner_Extensions.m; sourceTree = "<group>"; };
+		A7FA241B1D46071A00268889 /* CJSONDataSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDataSerializer.h; sourceTree = "<group>"; };
+		A7FA241C1D46071A00268889 /* CJSONDataSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDataSerializer.m; sourceTree = "<group>"; };
+		A7FA241D1D46071A00268889 /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer.h; sourceTree = "<group>"; };
+		A7FA241E1D46071A00268889 /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer.m; sourceTree = "<group>"; };
+		A7FA241F1D46071A00268889 /* CJSONScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONScanner.h; sourceTree = "<group>"; };
+		A7FA24201D46071A00268889 /* CJSONScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONScanner.m; sourceTree = "<group>"; };
+		A7FA24211D46071A00268889 /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
+		A7FA24221D46071A00268889 /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
+		A7FA24231D46071A00268889 /* CSerializedJSONData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSerializedJSONData.h; sourceTree = "<group>"; };
+		A7FA24241D46071A00268889 /* CSerializedJSONData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSerializedJSONData.m; sourceTree = "<group>"; };
+		A7FA24251D46071A00268889 /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRepresentation.h; sourceTree = "<group>"; };
+		A7FA24271D46071A00268889 /* BNCommonDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNCommonDef.h; sourceTree = "<group>"; };
+		A7FA24281D46071A00268889 /* BNCoreServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNCoreServices.h; sourceTree = "<group>"; };
+		A7FA24291D46071A00268889 /* BNLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNLocation.h; sourceTree = "<group>"; };
+		A7FA242A1D46071A00268889 /* BNLocationManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNLocationManagerProtocol.h; sourceTree = "<group>"; };
+		A7FA242B1D46071A00268889 /* BNRoutePlanManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRoutePlanManagerProtocol.h; sourceTree = "<group>"; };
+		A7FA242C1D46071A00268889 /* BNRoutePlanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRoutePlanModel.h; sourceTree = "<group>"; };
+		A7FA242D1D46071A00268889 /* BNSoundEventProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNSoundEventProtocol.h; sourceTree = "<group>"; };
+		A7FA242E1D46071A00268889 /* BNStrategyManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNStrategyManagerProtocol.h; sourceTree = "<group>"; };
+		A7FA242F1D46071A00268889 /* BNUIManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNUIManagerProtocol.h; sourceTree = "<group>"; };
+		A7FA24301D46071A00268889 /* libbaiduNaviSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbaiduNaviSDK.a; sourceTree = "<group>"; };
+		A7FA24311D46071A00268889 /* updatelog.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = updatelog.txt; sourceTree = "<group>"; };
+		A7FA24441D46088900268889 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A7FA24461D46089200268889 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		A7FA24481D46089D00268889 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		A7FA244A1D4608AB00268889 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		A7FA244C1D4608CD00268889 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		A7FA244E1D4608D700268889 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A7FA24501D460A2700268889 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A7FA24541D460B7100268889 /* BMKDriveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKDriveController.h; sourceTree = "<group>"; };
+		A7FA24551D460B7100268889 /* BMKDriveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKDriveController.m; sourceTree = "<group>"; };
+		AA7915D6B1A02371F1719CA9 /* libPods-YWNavAMapView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YWNavAMapView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7AFCBFB1D40D9180070DEF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7FA24511D460A2700268889 /* CoreLocation.framework in Frameworks */,
+				A7FA244F1D4608D700268889 /* Security.framework in Frameworks */,
+				A7FA244D1D4608CD00268889 /* libstdc++.6.0.9.tbd in Frameworks */,
+				A7FA244B1D4608AB00268889 /* MediaPlayer.framework in Frameworks */,
+				A7FA24491D46089D00268889 /* CoreMotion.framework in Frameworks */,
+				A7FA24471D46089200268889 /* ImageIO.framework in Frameworks */,
+				A7FA24451D46088900268889 /* AudioToolbox.framework in Frameworks */,
+				8EA60DAD52DD85B2051FCFB2 /* libPods-YWNavAMapView.a in Frameworks */,
+				A7FA24421D46071A00268889 /* libbaiduNaviSDK.a in Frameworks */,
+				A7FA24331D46071A00268889 /* libBaiduMobStatForSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7AFCC141D40D9190070DEF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7AFCC1F1D40D9190070DEF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		73141AD354EAD48B9B57BB16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25EEF12D56E18DDB08C44FC8 /* Pods-YWNavAMapView.debug.xcconfig */,
+				2648FF26F507DCA25FE169A2 /* Pods-YWNavAMapView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A79A1FD41D41B1BE001C7292 /* AMPNavClass */ = {
+			isa = PBXGroup;
+			children = (
+				A79A1FD81D41BE59001C7292 /* Common */,
+				A79A1FD51D41B20F001C7292 /* DriveAMPcontroller.h */,
+				A79A1FD61D41B20F001C7292 /* DriveAMPcontroller.m */,
+				A79A1FE91D41C164001C7292 /* WalkAMPController.h */,
+				A79A1FEA1D41C164001C7292 /* WalkAMPController.m */,
+				A79A1FEC1D41C3C9001C7292 /* WalkNaviViewController.h */,
+				A79A1FED1D41C3C9001C7292 /* WalkNaviViewController.m */,
+			);
+			path = AMPNavClass;
+			sourceTree = "<group>";
+		};
+		A79A1FD81D41BE59001C7292 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A79A1FD91D41BE59001C7292 /* DriveNaviViewController */,
+				A79A1FDC1D41BE59001C7292 /* MoreMenuView */,
+				A79A1FDF1D41BE59001C7292 /* PointAnnotation */,
+				A79A1FE21D41BE59001C7292 /* SpeechSynthesizer */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A79A1FD91D41BE59001C7292 /* DriveNaviViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A79A1FDA1D41BE59001C7292 /* DriveNaviViewController.h */,
+				A79A1FDB1D41BE59001C7292 /* DriveNaviViewController.m */,
+			);
+			path = DriveNaviViewController;
+			sourceTree = "<group>";
+		};
+		A79A1FDC1D41BE59001C7292 /* MoreMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				A79A1FDD1D41BE59001C7292 /* MoreMenuView.h */,
+				A79A1FDE1D41BE59001C7292 /* MoreMenuView.m */,
+			);
+			path = MoreMenuView;
+			sourceTree = "<group>";
+		};
+		A79A1FDF1D41BE59001C7292 /* PointAnnotation */ = {
+			isa = PBXGroup;
+			children = (
+				A79A1FE01D41BE59001C7292 /* NaviPointAnnotation.h */,
+				A79A1FE11D41BE59001C7292 /* NaviPointAnnotation.m */,
+			);
+			path = PointAnnotation;
+			sourceTree = "<group>";
+		};
+		A79A1FE21D41BE59001C7292 /* SpeechSynthesizer */ = {
+			isa = PBXGroup;
+			children = (
+				A79A1FE31D41BE59001C7292 /* SpeechSynthesizer.h */,
+				A79A1FE41D41BE59001C7292 /* SpeechSynthesizer.m */,
+			);
+			path = SpeechSynthesizer;
+			sourceTree = "<group>";
+		};
+		A7AFCBF51D40D9180070DEF3 = {
+			isa = PBXGroup;
+			children = (
+				A7AFCC001D40D9180070DEF3 /* YWNavAMapView */,
+				A7AFCC1A1D40D9190070DEF3 /* YWNavAMapViewTests */,
+				A7AFCC251D40D9190070DEF3 /* YWNavAMapViewUITests */,
+				A7AFCBFF1D40D9180070DEF3 /* Products */,
+				73141AD354EAD48B9B57BB16 /* Pods */,
+				C03FBC28875F1579BDBC7FB2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A7AFCBFF1D40D9180070DEF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7AFCBFE1D40D9180070DEF3 /* YWNavAMapView.app */,
+				A7AFCC171D40D9190070DEF3 /* YWNavAMapViewTests.xctest */,
+				A7AFCC221D40D9190070DEF3 /* YWNavAMapViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7AFCC001D40D9180070DEF3 /* YWNavAMapView */ = {
+			isa = PBXGroup;
+			children = (
+				A7FA23FE1D46071A00268889 /* BMKNAVERClass */,
+				A79A1FD41D41B1BE001C7292 /* AMPNavClass */,
+				A7AFCC041D40D9180070DEF3 /* AppDelegate.h */,
+				A7AFCC051D40D9180070DEF3 /* AppDelegate.mm */,
+				A7AFCC071D40D9180070DEF3 /* ViewController.h */,
+				A7AFCC081D40D9180070DEF3 /* ViewController.m */,
+				A7AFCC0A1D40D9180070DEF3 /* Main.storyboard */,
+				A7AFCC0D1D40D9180070DEF3 /* Assets.xcassets */,
+				A7AFCC0F1D40D9180070DEF3 /* LaunchScreen.storyboard */,
+				A7AFCC121D40D9180070DEF3 /* Info.plist */,
+				A7AFCC011D40D9180070DEF3 /* Supporting Files */,
+			);
+			path = YWNavAMapView;
+			sourceTree = "<group>";
+		};
+		A7AFCC011D40D9180070DEF3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7AFCC021D40D9180070DEF3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A7AFCC1A1D40D9190070DEF3 /* YWNavAMapViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				A7AFCC1B1D40D9190070DEF3 /* YWNavAMapViewTests.m */,
+				A7AFCC1D1D40D9190070DEF3 /* Info.plist */,
+			);
+			path = YWNavAMapViewTests;
+			sourceTree = "<group>";
+		};
+		A7AFCC251D40D9190070DEF3 /* YWNavAMapViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A7AFCC261D40D9190070DEF3 /* YWNavAMapViewUITests.m */,
+				A7AFCC281D40D9190070DEF3 /* Info.plist */,
+			);
+			path = YWNavAMapViewUITests;
+			sourceTree = "<group>";
+		};
+		A7FA23FE1D46071A00268889 /* BMKNAVERClass */ = {
+			isa = PBXGroup;
+			children = (
+				A7FA24541D460B7100268889 /* BMKDriveController.h */,
+				A7FA24551D460B7100268889 /* BMKDriveController.m */,
+				A7FA23FF1D46071A00268889 /* BaiduNavi_iOSSDK_v2.0.6_Lib */,
+			);
+			path = BMKNAVERClass;
+			sourceTree = "<group>";
+		};
+		A7FA23FF1D46071A00268889 /* BaiduNavi_iOSSDK_v2.0.6_Lib */ = {
+			isa = PBXGroup;
+			children = (
+				A7FA24001D46071A00268889 /* baiduNaviSDK.bundle */,
+				A7FA24011D46071A00268889 /* BaiduStatistics */,
+				A7FA24261D46071A00268889 /* inc */,
+				A7FA24301D46071A00268889 /* libbaiduNaviSDK.a */,
+				A7FA24311D46071A00268889 /* updatelog.txt */,
+			);
+			path = BaiduNavi_iOSSDK_v2.0.6_Lib;
+			sourceTree = "<group>";
+		};
+		A7FA24011D46071A00268889 /* BaiduStatistics */ = {
+			isa = PBXGroup;
+			children = (
+				A7FA24021D46071A00268889 /* BaiduMobStat.h */,
+				A7FA24031D46071A00268889 /* BaiduMobStatForSDK.h */,
+				A7FA24041D46071A00268889 /* libBaiduMobStatForSDK.a */,
+				A7FA24051D46071A00268889 /* TouchJSON */,
+			);
+			path = BaiduStatistics;
+			sourceTree = "<group>";
+		};
+		A7FA24051D46071A00268889 /* TouchJSON */ = {
+			isa = PBXGroup;
+			children = (
+				A7FA24061D46071A00268889 /* CDataScanner.h */,
+				A7FA24071D46071A00268889 /* CDataScanner.m */,
+				A7FA24081D46071A00268889 /* Experimental */,
+				A7FA24111D46071A00268889 /* Extensions */,
+				A7FA241A1D46071A00268889 /* JSON */,
+			);
+			path = TouchJSON;
+			sourceTree = "<group>";
+		};
+		A7FA24081D46071A00268889 /* Experimental */ = {
+			isa = PBXGroup;
+			children = (
+				A7FA24091D46071A00268889 /* CFilteringJSONSerializer.h */,
+				A7FA240A1D46071A00268889 /* CFilteringJSONSerializer.m */,
+				A7FA240B1D46071A00268889 /* CJSONDeserializer_BlocksExtensions.h */,
+				A7FA240C1D46071A00268889 /* CJSONDeserializer_BlocksExtensions.m */,
+				A7FA240D1D46071A00268889 /* CJSONSerialization.h */,
+				A7FA240E1D46071A00268889 /* CJSONSerialization.m */,
+				A7FA240F1D46071A00268889 /* CJSONSerializedData.h */,
+				A7FA24101D46071A00268889 /* CJSONSerializedData.m */,
+			);
+			path = Experimental;
+			sourceTree = "<group>";
+		};
+		A7FA24111D46071A00268889 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A7FA24121D46071A00268889 /* CDataScanner_Extensions.h */,
+				A7FA24131D46071A00268889 /* CDataScanner_Extensions.m */,
+				A7FA24141D46071A00268889 /* NSCharacterSet_Extensions.h */,
+				A7FA24151D46071A00268889 /* NSCharacterSet_Extensions.m */,
+				A7FA24161D46071A00268889 /* NSDictionary_JSONExtensions.h */,
+				A7FA24171D46071A00268889 /* NSDictionary_JSONExtensions.m */,
+				A7FA24181D46071A00268889 /* NSScanner_Extensions.h */,
+				A7FA24191D46071A00268889 /* NSScanner_Extensions.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A7FA241A1D46071A00268889 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				A7FA241B1D46071A00268889 /* CJSONDataSerializer.h */,
+				A7FA241C1D46071A00268889 /* CJSONDataSerializer.m */,
+				A7FA241D1D46071A00268889 /* CJSONDeserializer.h */,
+				A7FA241E1D46071A00268889 /* CJSONDeserializer.m */,
+				A7FA241F1D46071A00268889 /* CJSONScanner.h */,
+				A7FA24201D46071A00268889 /* CJSONScanner.m */,
+				A7FA24211D46071A00268889 /* CJSONSerializer.h */,
+				A7FA24221D46071A00268889 /* CJSONSerializer.m */,
+				A7FA24231D46071A00268889 /* CSerializedJSONData.h */,
+				A7FA24241D46071A00268889 /* CSerializedJSONData.m */,
+				A7FA24251D46071A00268889 /* JSONRepresentation.h */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		A7FA24261D46071A00268889 /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				A7FA24271D46071A00268889 /* BNCommonDef.h */,
+				A7FA24281D46071A00268889 /* BNCoreServices.h */,
+				A7FA24291D46071A00268889 /* BNLocation.h */,
+				A7FA242A1D46071A00268889 /* BNLocationManagerProtocol.h */,
+				A7FA242B1D46071A00268889 /* BNRoutePlanManagerProtocol.h */,
+				A7FA242C1D46071A00268889 /* BNRoutePlanModel.h */,
+				A7FA242D1D46071A00268889 /* BNSoundEventProtocol.h */,
+				A7FA242E1D46071A00268889 /* BNStrategyManagerProtocol.h */,
+				A7FA242F1D46071A00268889 /* BNUIManagerProtocol.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		C03FBC28875F1579BDBC7FB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7FA24501D460A2700268889 /* CoreLocation.framework */,
+				A7FA244E1D4608D700268889 /* Security.framework */,
+				A7FA244C1D4608CD00268889 /* libstdc++.6.0.9.tbd */,
+				A7FA244A1D4608AB00268889 /* MediaPlayer.framework */,
+				A7FA24481D46089D00268889 /* CoreMotion.framework */,
+				A7FA24461D46089200268889 /* ImageIO.framework */,
+				A7FA24441D46088900268889 /* AudioToolbox.framework */,
+				AA7915D6B1A02371F1719CA9 /* libPods-YWNavAMapView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7AFCBFD1D40D9180070DEF3 /* YWNavAMapView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7AFCC2B1D40D9190070DEF3 /* Build configuration list for PBXNativeTarget "YWNavAMapView" */;
+			buildPhases = (
+				28CB64F6279218534586B080 /* [CP] Check Pods Manifest.lock */,
+				A7AFCBFA1D40D9180070DEF3 /* Sources */,
+				A7AFCBFB1D40D9180070DEF3 /* Frameworks */,
+				A7AFCBFC1D40D9180070DEF3 /* Resources */,
+				FB7D5C922BCDED11405C4573 /* [CP] Embed Pods Frameworks */,
+				812024B857DE83BFD1EA6E57 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YWNavAMapView;
+			productName = YWNavAMapView;
+			productReference = A7AFCBFE1D40D9180070DEF3 /* YWNavAMapView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7AFCC161D40D9190070DEF3 /* YWNavAMapViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7AFCC2E1D40D9190070DEF3 /* Build configuration list for PBXNativeTarget "YWNavAMapViewTests" */;
+			buildPhases = (
+				A7AFCC131D40D9190070DEF3 /* Sources */,
+				A7AFCC141D40D9190070DEF3 /* Frameworks */,
+				A7AFCC151D40D9190070DEF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7AFCC191D40D9190070DEF3 /* PBXTargetDependency */,
+			);
+			name = YWNavAMapViewTests;
+			productName = YWNavAMapViewTests;
+			productReference = A7AFCC171D40D9190070DEF3 /* YWNavAMapViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A7AFCC211D40D9190070DEF3 /* YWNavAMapViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7AFCC311D40D9190070DEF3 /* Build configuration list for PBXNativeTarget "YWNavAMapViewUITests" */;
+			buildPhases = (
+				A7AFCC1E1D40D9190070DEF3 /* Sources */,
+				A7AFCC1F1D40D9190070DEF3 /* Frameworks */,
+				A7AFCC201D40D9190070DEF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7AFCC241D40D9190070DEF3 /* PBXTargetDependency */,
+			);
+			name = YWNavAMapViewUITests;
+			productName = YWNavAMapViewUITests;
+			productReference = A7AFCC221D40D9190070DEF3 /* YWNavAMapViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7AFCBF61D40D9180070DEF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Mr-yuwei";
+				TargetAttributes = {
+					A7AFCBFD1D40D9180070DEF3 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 34TTMZE623;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					A7AFCC161D40D9190070DEF3 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A7AFCBFD1D40D9180070DEF3;
+					};
+					A7AFCC211D40D9190070DEF3 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A7AFCBFD1D40D9180070DEF3;
+					};
+				};
+			};
+			buildConfigurationList = A7AFCBF91D40D9180070DEF3 /* Build configuration list for PBXProject "YWNavAMapView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7AFCBF51D40D9180070DEF3;
+			productRefGroup = A7AFCBFF1D40D9180070DEF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7AFCBFD1D40D9180070DEF3 /* YWNavAMapView */,
+				A7AFCC161D40D9190070DEF3 /* YWNavAMapViewTests */,
+				A7AFCC211D40D9190070DEF3 /* YWNavAMapViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7AFCBFC1D40D9180070DEF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7FA24321D46071A00268889 /* baiduNaviSDK.bundle in Resources */,
+				A7AFCC111D40D9180070DEF3 /* LaunchScreen.storyboard in Resources */,
+				A7FA24431D46071A00268889 /* updatelog.txt in Resources */,
+				A7AFCC0E1D40D9180070DEF3 /* Assets.xcassets in Resources */,
+				A7AFCC0C1D40D9180070DEF3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7AFCC151D40D9190070DEF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7AFCC201D40D9190070DEF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28CB64F6279218534586B080 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		812024B857DE83BFD1EA6E57 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YWNavAMapView/Pods-YWNavAMapView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB7D5C922BCDED11405C4573 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YWNavAMapView/Pods-YWNavAMapView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7AFCBFA1D40D9180070DEF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7FA243E1D46071A00268889 /* CJSONDeserializer.m in Sources */,
+				A79A1FE61D41BE59001C7292 /* MoreMenuView.m in Sources */,
+				A79A1FEE1D41C3C9001C7292 /* WalkNaviViewController.m in Sources */,
+				A7FA24561D460B7100268889 /* BMKDriveController.m in Sources */,
+				A7FA24411D46071A00268889 /* CSerializedJSONData.m in Sources */,
+				A79A1FE51D41BE59001C7292 /* DriveNaviViewController.m in Sources */,
+				A7AFCC091D40D9180070DEF3 /* ViewController.m in Sources */,
+				A7FA24371D46071A00268889 /* CJSONSerialization.m in Sources */,
+				A7FA243D1D46071A00268889 /* CJSONDataSerializer.m in Sources */,
+				A7FA24351D46071A00268889 /* CFilteringJSONSerializer.m in Sources */,
+				A7AFCC061D40D9180070DEF3 /* AppDelegate.mm in Sources */,
+				A79A1FE71D41BE59001C7292 /* NaviPointAnnotation.m in Sources */,
+				A7FA243A1D46071A00268889 /* NSCharacterSet_Extensions.m in Sources */,
+				A7FA24381D46071A00268889 /* CJSONSerializedData.m in Sources */,
+				A7FA243B1D46071A00268889 /* NSDictionary_JSONExtensions.m in Sources */,
+				A79A1FEB1D41C164001C7292 /* WalkAMPController.m in Sources */,
+				A7FA243F1D46071A00268889 /* CJSONScanner.m in Sources */,
+				A7FA24391D46071A00268889 /* CDataScanner_Extensions.m in Sources */,
+				A7FA24341D46071A00268889 /* CDataScanner.m in Sources */,
+				A7FA24361D46071A00268889 /* CJSONDeserializer_BlocksExtensions.m in Sources */,
+				A7AFCC031D40D9180070DEF3 /* main.m in Sources */,
+				A79A1FE81D41BE59001C7292 /* SpeechSynthesizer.m in Sources */,
+				A7FA243C1D46071A00268889 /* NSScanner_Extensions.m in Sources */,
+				A7FA24401D46071A00268889 /* CJSONSerializer.m in Sources */,
+				A79A1FD71D41B20F001C7292 /* DriveAMPcontroller.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7AFCC131D40D9190070DEF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7AFCC1C1D40D9190070DEF3 /* YWNavAMapViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7AFCC1E1D40D9190070DEF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7AFCC271D40D9190070DEF3 /* YWNavAMapViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7AFCC191D40D9190070DEF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7AFCBFD1D40D9180070DEF3 /* YWNavAMapView */;
+			targetProxy = A7AFCC181D40D9190070DEF3 /* PBXContainerItemProxy */;
+		};
+		A7AFCC241D40D9190070DEF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7AFCBFD1D40D9180070DEF3 /* YWNavAMapView */;
+			targetProxy = A7AFCC231D40D9190070DEF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A7AFCC0A1D40D9180070DEF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7AFCC0B1D40D9180070DEF3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A7AFCC0F1D40D9180070DEF3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7AFCC101D40D9180070DEF3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7AFCC291D40D9190070DEF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7AFCC2A1D40D9190070DEF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7AFCC2C1D40D9190070DEF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25EEF12D56E18DDB08C44FC8 /* Pods-YWNavAMapView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = YWNavAMapView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YWNavAMapView/BMKNAVERClass/BaiduNavi_iOSSDK_v2.0.6_Lib/BaiduStatistics",
+					"$(PROJECT_DIR)/YWNavAMapView/BMKNAVERClass/BaiduNavi_iOSSDK_v2.0.6_Lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Mr-yuwei";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		A7AFCC2D1D40D9190070DEF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2648FF26F507DCA25FE169A2 /* Pods-YWNavAMapView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = YWNavAMapView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YWNavAMapView/BMKNAVERClass/BaiduNavi_iOSSDK_v2.0.6_Lib/BaiduStatistics",
+					"$(PROJECT_DIR)/YWNavAMapView/BMKNAVERClass/BaiduNavi_iOSSDK_v2.0.6_Lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Mr-yuwei";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		A7AFCC2F1D40D9190070DEF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YWNavAMapViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "https---github.com-Mr-yuwei.YWNavAMapViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YWNavAMapView.app/YWNavAMapView";
+			};
+			name = Debug;
+		};
+		A7AFCC301D40D9190070DEF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YWNavAMapViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "https---github.com-Mr-yuwei.YWNavAMapViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YWNavAMapView.app/YWNavAMapView";
+			};
+			name = Release;
+		};
+		A7AFCC321D40D9190070DEF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YWNavAMapViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "https---github.com-Mr-yuwei.YWNavAMapViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YWNavAMapView;
+			};
+			name = Debug;
+		};
+		A7AFCC331D40D9190070DEF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YWNavAMapViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "https---github.com-Mr-yuwei.YWNavAMapViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YWNavAMapView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7AFCBF91D40D9180070DEF3 /* Build configuration list for PBXProject "YWNavAMapView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7AFCC291D40D9190070DEF3 /* Debug */,
+				A7AFCC2A1D40D9190070DEF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7AFCC2B1D40D9190070DEF3 /* Build configuration list for PBXNativeTarget "YWNavAMapView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7AFCC2C1D40D9190070DEF3 /* Debug */,
+				A7AFCC2D1D40D9190070DEF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7AFCC2E1D40D9190070DEF3 /* Build configuration list for PBXNativeTarget "YWNavAMapViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7AFCC2F1D40D9190070DEF3 /* Debug */,
+				A7AFCC301D40D9190070DEF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7AFCC311D40D9190070DEF3 /* Build configuration list for PBXNativeTarget "YWNavAMapViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7AFCC321D40D9190070DEF3 /* Debug */,
+				A7AFCC331D40D9190070DEF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7AFCBF61D40D9180070DEF3 /* Project object */;
+}

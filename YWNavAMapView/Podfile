@@ -1,0 +1,8 @@
+
+target ‘YWNavAMapView’ do
+
+pod ’AMapNavi‘
+pod 'AMapLocation' #定位SDK
+
+
+end
