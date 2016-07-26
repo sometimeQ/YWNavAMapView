@@ -265,4 +265,4 @@ NSDictionary *options = @{ MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirec
 [MKMapItem openMapsWithItems:items launchOptions:options]; //打开苹果自身地图应用，并呈现特定的item
 
 ```
-Demo在[这里](https://github.com/Mr-yuwei/YWNavAMapView)需要自己导入百度导航SDK ,百度的包太大->100M
+
